@@ -36,6 +36,12 @@ string result = score switch
     <= 34 => "Жарко",
     _ => "Очень жарко"
 };
-
 Console.WriteLine(result);
 
+string role = "user";
+
+string result = role switch
+{
+    "admin" => "Полный доступ",
+    not "admin" => ""
+}
